@@ -10,7 +10,7 @@ let pintoresRouter = require('./routes/pintor');
 const app = express();
 app.set('view engine', 'hbs');
 hbs.registerPartials(__dirname + '/views/partials');
-app.use(express.static(__dirname + '/piblic'));
+app.use(express.static(__dirname + '/public'));
 
 app.use('/', pintoresRouter);
 
